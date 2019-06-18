@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/colorBackground"
+    tools:context=".highscoreActivity"
+    >
+
+    <TextView
+        android:id="@+id/text_view_lesson_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:freezesText="true"
+        android:text="Lekcja: "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50sp" />
+    <TextView
+        android:id="@+id/text_view_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Niestety, nie udalo ci się zaliczyć"
+        android:textAlignment="center"
+        android:layout_below="@+id/text_view_lesson_topic"
+        android:textColor="@android:color/black"
+        android:freezesText="true"
+        android:textSize="33sp" />
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_result_text"
+        android:layout_marginTop="20dp"
+        android:text="Twója ocena to 2.0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:freezesText="true"
+        android:textSize="33sp" />
+    <TextView
+        android:id="@+id/text_view_text_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_result"
+        android:layout_marginTop="20dp"
+        android:freezesText="true"
+        android:text="Zdobyłeś:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/text_view_lesson_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_text_"
+        android:text="3/5 pkt"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#A8A8A8"
+        android:layout_below="@+id/text_view_lesson_points"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Powrót"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
